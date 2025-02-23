@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .one{
+            width: 100%;
+            height: 10vh;
+            background-color: rgb(192, 189, 16);
+            color: rgb(0, 0, 0);
+            font-size: x-large;
+            position: relative;
+            color: azure;
+        }
+        .one h1{
+            margin: 0px;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+        }
+        .one table{
+            position: absolute;
+            bottom: 0px;
+            right: 30px;
+        }
+        .one td{
+            padding-left: 50px;
+        }
+        .two{
+            width: 100%;
+            height: 85vh;
+            position: relative;
+        }
+        .t1{
+            position: absolute;
+            left: 80px;
+            top: 200px;
+            color: azure;
+            font-size: large;
+        }
+        .t2{
+            position: absolute;
+            width: 500px;
+            height: 450px;
+            right: 150px;
+            top: 10px;
+        }
+        .hidden{
+            position: absolute;
+            width: 1000px;
+            height: 500px;
+            right: 0px;
+            top: 40px;
+            font-size: xx-large;
+            display: none;
+        }
+        .t2 img{
+            width: 500px;
+            height: 500px;
+            border-radius: 250px;
+        }
+        .t3{
+            position: absolute;
+            left: 100px;
+            top: 440px;
+            font-size: larger;
+        }
+        .three{
+            width: 100%;
+            height: 5vh;
+            background-color: rgb(192, 189, 16);
+        }
+        #i1{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="one" id="one">
+        <h1>𝑺𝑯𝑬𝑰𝑲 𝒁𝑨𝒀𝑬𝑫 𝑭</h1>
+        <table>
+            <tr>
+                <td><b>Home</b></td>
+                <td><b>Education</b></td>
+                <td><b>Skills</b></td>
+                <td><b>Contact</b></td>
+                <td><b>Project</b></td>
+            </tr>
+        </table>
+    </div>
+    <div class="two">
+        <img src="https://img.freepik.com/free-photo/flat-lay-geometric-shapes-background_23-2148319011.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1724889600&semt=ais_hybrid" alt="" id="i1">
+        <div class="t1">
+            <h1 id="h1">𝓗𝓮𝓵𝓵𝓸 𝓽𝓱𝓮𝓻𝓮,</h1>
+            <h1 id="h2">𝙏𝙝𝙞𝙨 𝙞𝙨 𝙎𝙝𝙚𝙞𝙠 𝙕𝙖𝙮𝙚𝙙</h1>
+            <h1 id="h3">𝙎𝙤𝙛𝙩𝙬𝙖𝙧𝙚 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧</h1>
+        </div>
+        <div class="t2" id="t2">
+            <img src="MyPhoto.jpg" alt="">
+        </div>
+        <div class="hidden" id="hidden">
+            <h1>𝕻𝖚𝖗𝖘𝖚𝖎𝖓𝖌 𝕸𝕰𝕽𝕹 𝕴𝖓𝖙𝖊𝖗𝖓✍</h1>
+        </div>
+        <div class="t3">
+            <button id="b"><b>About</b></button>
+        </div>
+    </div>
+    <div class="three"></div>
+    <script>
+        document.getElementById("b").onclick=function(){
+            document.getElementById("h1").innerHTML='𝙹𝚞𝚗𝚒𝚘𝚛 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛';
+            document.getElementById("h2").innerHTML='𝙸𝚗𝚝𝚎𝚛𝚗 𝚒𝚗 𝙰𝙸𝙲𝚃𝙴';
+            document.getElementById("h3").innerHTML='𝚂𝚘𝚏𝚝𝚠𝚊𝚛𝚎 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛';
+            document.getElementById("t2").style.display='none';
+            document.getElementById("hidden").style.display='block';
+            document.getElementsByClassName("one")[0].style.backgroundColor='black';
+        }
+    </script>
+</body>
+</html>
