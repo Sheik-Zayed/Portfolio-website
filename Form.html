@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(65, 63, 63);
+        }
+        .main{
+            background-color: white;
+            width: 35%;
+            font-size: x-large;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+        }
+        .main input{
+            width: 300px;
+            height: 30px;
+            border-radius: 20px;
+        }
+        #y{
+            width: 80px;
+            height: 20px;
+        }
+        button{
+            width: 100px;
+            height: 35px;
+            background-color: black;
+            font-size: large;
+            color: azure;
+            border-radius: 10px;
+        }
+        .main td{
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Login form</h1>
+        <form id="loginForm">
+            <table>
+                <tr>
+                    <td><label for="touch"><b>Name</b></label></td>
+                    <td><input type="text" id="touch"></td>
+                </tr>
+                <tr>
+                    <td><label for=""><b>Number</b></label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><label for=""><b>Email</b></label></td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td><label for=""><b>Confirm</b></label></td>
+                    <td><input type="radio" name="1" id="y">Yes <input type="radio" name="1" id="y">No</td>
+                </tr>
+                <tr>
+                    <td><button type="submit"><b>Submit</b></button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+        document.getElementById('loginForm').onsubmit = function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            window.location.href = 'Frontend.html'; // Redirect to demo.html
+        };
+    </script>
+</body>
+</html>
